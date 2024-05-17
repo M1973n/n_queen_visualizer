@@ -1,0 +1,28 @@
+#SpeedSlider {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#SpeedSlider input {
+    width: min(80vw, 200px);
+    appearance: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0;
+    background: #dddddd;
+}
+
+#SpeedSlider input::-webkit-slider-thumb {
+    appearance: none;
+    width: 0.5rem;
+    height: 1rem;
+    background: var(--border-color-light);
+    box-shadow: inset -200px 0 0 200px var(--border-color);
+}
+
+#SpeedSlider p {
+    text-align: center;
+    font-size: 0.8rem;
+}

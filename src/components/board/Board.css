@@ -1,0 +1,27 @@
+/* Board container styles */
+#Board {
+    display: grid;
+    place-items: center;
+    width: min-content;
+    border: 1px solid var(--border-color-light);
+    height: min-content;
+}
+
+/* Active state styles */
+#Board:active {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 1;
+    box-sizing: content-box;
+    outline: max(100vh, 100vw) solid rgba(0, 0, 0, 0.5);
+    border: 10px solid #dddddd;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    #Board:active {
+        transform: translate(-50%, -50%) scale(2);
+    }
+}

@@ -1,0 +1,64 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Root variables */
+:root {
+    --light-background-color: #ff0000;
+    --dark-background-color: #444444;
+    --small-font-size: 1rem;
+    --medium-font-size: 1.25rem;
+    --large-font-size: 1.5rem;
+    --font-color: #444444;
+    --border-color: #555555;
+    --border-color-light: #888888;
+    --unselected-color: #777777;
+    --disabled-color: #999999;
+    --animation-delay: 200ms;
+    --scroll-bar-background-color: transparent;
+    --scroll-bar-thumb-background-color: #888888;
+}
+
+/* Body styles */
+body {
+    color: var(--font-color);
+    overflow: hidden;
+}
+
+/* Button styles */
+button {
+    padding: 0.25rem 1rem;
+    outline: none;
+    border: 2px solid var(--border-color);
+    min-width: 75px;
+    transition: var(--animation-delay) ease-in-out;
+}
+
+button:focus, button:active {
+    border: none;
+    outline: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    color: var(--disabled-color);
+    border: 2px solid var(--border-color-light);
+}
+
+/* Input styles */
+input:disabled {
+    cursor: not-allowed !important;
+    opacity: 0.8;
+}
+
+/* Global transition */
+input, button {
+    transition: var(--animation-delay) ease-in-out;
+}

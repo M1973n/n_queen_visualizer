@@ -1,0 +1,22 @@
+/* Styles for the cell */
+.cell {
+    display: grid;
+    place-items: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ccc; /* Adding a border for better visualization */
+}
+
+/* Styles for the queen */
+.queen {
+    display: grid;
+    place-items: center;
+}
+
+/* Styles for the queen image */
+.queen img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%; /* Making the queen image round */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Adding a shadow effect */
+}
